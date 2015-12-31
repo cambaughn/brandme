@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+$body-bg:		#2980b9;
+$font-family-sans-serif: 	'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+$text-color:	white;
+$brand-primary:		white;
+
+$jumbotron-bg:		#2980b9;
+
+$navbar-default-bg:		#2980b9;
+$navbar-default-brand-color: 	white;
+$navbar-default-brand-hover-color:		white;
+
+
+@import 'bootstrap-sprockets';
+@import 'bootstrap';
+
+@import "elusive-icons-sprockets";
+@import "elusive-icons";
+
+.homepage_content {
+	margin-top: -80px;
+}
+
+.circle {
+	width: 200px;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.highlight {
+	color: #f1c40f;
+}
