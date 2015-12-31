@@ -1,0 +1,2 @@
+<h1> Brand My Life Project </h1>
+<p> This project is a social experiment to see what it looks like when companies diverge from traditional advertising tactics and invest in the future of a recent graduate. </p>
