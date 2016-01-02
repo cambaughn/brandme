@@ -12,12 +12,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass'
 gem 'elusive-icons-sass'
 gem 'devise', '~> 3.5.3'
-gem 'mail_form'
-gem 'simple_form'
-
 
 group :development, :test do
-  gem 'foreman'
   gem 'byebug'
   gem 'sqlite3'
 end
