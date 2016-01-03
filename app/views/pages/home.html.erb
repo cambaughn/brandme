@@ -1,8 +1,12 @@
 <div class="container">
+	<% flash.each do |name, msg|%> 
+		<%= content_tag(:div, msg, class: "alert alert-#{name}") %>
+	<% end %>
+	
 	<div class="jumbotron text-center homepage_content">
 		<h1></h1>
 		<h1> project <i class="el el-laptop el-1x"></i> laptop</h1>
-		<h3> Let's do something cool together </h3> 
+		<h3> Laser-engrave my laptop with your logo </h3> 
 		<br />
 
 		<div class="media">
@@ -14,6 +18,7 @@
 
   		<br />
   		<br />
+
 		<p> My name is Cameron. </p>
 		<p> I just graduated from Stanford University, and I like to create things. </p>
 		<p> However, despite its best efforts, my 5-year-old laptop isn't quite cutting it anymore when it comes to photography, graphic design, and filmmaking. </p>
@@ -22,7 +27,7 @@
 		<p> Forget billboards and online advertisements. Turn my new laptop into your unique advertising space. </p>
 		<p> <span class="highlight">It's simple. </span> I'll laser-engrave your logo on the surface of my new MacBook Pro.</p>
 		<p> My laptop goes everywhere I go, which means that this will be a way to get your brand seen by everyone who sees me in the Seattle, San Francisco, and Los Angeles areas (I travel a lot, especially on the west coast), as well as on my social media and some videos I'll make documenting the process. </p>
-		<p> This is an experiment in doing something a little different. You help me out, and I'll help you.</p>
+		<p> This is an experiment in doing something a little different. </p>
 		<h3 class="highlight"> Give it a thought. If you're interested in helping me get a new laptop to keep creating cool things in exchange for awesome laser engraved advertising that travels all around the world with me, or if you just want more information, fill out the form below and I'll be in touch. </h3>
 		<h3> I'd love to hear from you. Let's do this project together. </h3>
 	</div>
