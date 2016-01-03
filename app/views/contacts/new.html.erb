@@ -1,28 +1,30 @@
-<h1 id="page_title" class="text-center">Say Hello</h1>
-	<%= form_for @contact do |f| %>
-		<div class="form-group">
-			<%= f.label :name %>
-			<%= f.text_field :name, required: true, class: "form-control" %>
-		</div> 
-		<br />
-		<div class="form-group">
-			<%= f.label :email %>
-			<%= f.email_field :email, required: true, class: "form-control" %>
-		</div>
-		<br />
-		<div class="form-group">
-			<%= f.label :message %>
-			<%= f.text_area :message, as: :text, class: "form-control" %>
-		</div>
-		<div class="hidden">
-			<%= f.label :nickname %>
-			<%= f.text_field :nickname, hint: 'leave this field blank' %>
-		</div>
+<h1 id="page_title" class="text-center">Contact</h1>
+<div class="panel panel-default col-md-4">
+	<div class="panel-body">
+		<%= form_for @contact do |f| %>
+			<div class="form-group">
+				<%= f.label :name %>
+				<%= f.text_field :name, required: true, class: "form-control" %>
+			</div> 
+			<br />
+			<div class="form-group">
+				<%= f.label :email %>
+				<%= f.email_field :email, required: true, class: "form-control" %>
+			</div>
+			<br />
+			<div class="form-group">
+				<%= f.label :message %>
+				<%= f.text_area :message, as: :text, class: "form-control" %>
+			</div>
+			<div class="hidden">
+				<%= f.label :nickname %>
+				<%= f.text_field :nickname, hint: 'leave this field blank' %>
+			</div>
 
-		<br ?>
+			<br ?>
 
-		<%= f.submit 'Send Message', class: "btn btn-default" %>
+			<%= f.submit 'Send Message', class: "btn btn-default" %>
 
-	<% end %>
-
+		<% end %>
+	</div>
 </div>

@@ -27,3 +27,37 @@
 		<h3> I'd love to hear from you. Let's do this project together. </h3>
 	</div>
 </div>
+
+<div class="col-md-4"></div>
+	<div class="panel panel-default col-md-4">
+		<div class="panel-heading">
+    		<h2 class="panel-title text-center">Contact Me</h2>
+  		</div>
+		<div class="panel-body">
+			<%= form_for Contact.new do |f| %>
+				<div class="form-group">
+					<%= f.label :name %>
+					<%= f.text_field :name, required: true, class: "form-control" %>
+				</div> 
+				<br />
+				<div class="form-group">
+					<%= f.label :email %>
+					<%= f.email_field :email, required: true, class: "form-control" %>
+				</div>
+				<br />
+				<div class="form-group">
+					<%= f.label :message %>
+					<%= f.text_area :message, as: :text, class: "form-control" %>
+				</div>
+				<div class="hidden">
+					<%= f.label :nickname %>
+					<%= f.text_field :nickname, hint: 'leave this field blank' %>
+				</div>
+
+				<br ?>
+
+				<%= f.submit 'Send Message', class: "btn btn-default" %>
+
+			<% end %>
+		</div> <!-- panel-body -->
+	</div> <!-- panel -->
