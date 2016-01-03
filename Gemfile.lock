@@ -179,7 +179,7 @@ DEPENDENCIES
   elusive-icons-sass
   jbuilder (~> 2.0)
   jquery-rails
-  mail_form (~> 1.5.1, ~> 1.5)
+  mail_form
   pg
   rails (= 4.2.5)
   rails_12factor
